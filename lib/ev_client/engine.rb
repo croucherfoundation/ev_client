@@ -1,6 +1,6 @@
 require 'concerns/has_round'
 
-module PubClient
+module EvClient
   class Engine < ::Rails::Engine
 
     config.generators do |g|
@@ -10,7 +10,7 @@ module PubClient
     
     initializer "pub_client.integration" do
       ActiveSupport.on_load :action_controller do
-        helper PubClientHelper
+        helper EvClientHelper
       end
     end
 

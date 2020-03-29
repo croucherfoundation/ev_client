@@ -5,12 +5,12 @@ require "pub_client/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "pub_client"
-  s.version     = PubClient::VERSION
+  s.name        = "ev_client"
+  s.version     = EvClient::VERSION
   s.authors     = ["William Ross"]
   s.email       = ["will@spanner.org"]
-  s.homepage    = "https://github.com/spanner/pub_client"
-  s.summary     = "Holds in one place all the gubbins necessary to act as a client to the Croucher publication system."
+  s.homepage    = "https://github.com/croucherfoundation/ev_client"
+  s.summary     = "Holds in one place all the gubbins necessary to act as a client to the Croucher events calendar."
   s.description = "For now just a convenience and maintenance simplifier."
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]

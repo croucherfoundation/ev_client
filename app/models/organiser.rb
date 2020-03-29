@@ -1,8 +1,8 @@
 class Organiser
   include Her::JsonApi::Model
-  belongs_to :event
+  include HasEvent
 
-  use_api PUB
+  use_api EVENTS_API
   collection_path "/api/organisers"
 
 end

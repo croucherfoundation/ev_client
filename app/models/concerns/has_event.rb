@@ -6,7 +6,7 @@ module HasEvent
   end
 
   def event?
-    event_id && event
+    event_id && !!event
   end
 
   def event=(event)

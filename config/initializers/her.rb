@@ -1,14 +1,12 @@
 require 'settings'
-require 'her'
 require 'faraday_middleware'
+require 'her'
+require 'her/middleware/json_api_parser'
 
-Settings.pub ||= {}
-Settings.pub[:protocol] ||= 'http'
-Settings.pub[:api_host] ||= Settings.pub[:host] || 'localhost'
-Settings.pub[:api_port] ||= Settings.pub[:port] || 8007
+api_url = ENV['EV_API_URL'] || "#{Settings.ev.protocol}://#{Settings.ev.api_host}:#{Settings.ev.api_port}"
 
-PUB = Her::API.new
-PUB.setup url: "#{Settings.pub.protocol}://#{Settings.pub.api_host}:#{Settings.pub.api_port}" do |c|
+EVENTS_API = Her::API.new
+EVENTS_API.setup url: api_url do |c|
   # Request
   c.use FaradayMiddleware::EncodeJson
   # Response

@@ -1,4 +1,4 @@
 en:
   activerecord:
     attributes:
-      pub_client:
+      ev_client:

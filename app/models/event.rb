@@ -6,7 +6,7 @@ class Event
   has_many :images
   has_many :days
 
-  use_api PUB
+  use_api EVENTS_API
   collection_path "/api/events"
 
   # temporary while we are not yet sending jsonapi data back to core properly
