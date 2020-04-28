@@ -1,6 +1,6 @@
 # EvClient
 
-THe ev_client gem is very minimal helper that will bring useful models from the Croucher event-hosting system into another application.
+The ev_client gem is a very minimal helper that will bring useful models from the Croucher event-hosting system into another application.
 Often all you need is to add:
 
     gem 'ev_client'
@@ -14,7 +14,7 @@ to your model. As yet there are no endpoints here.
 
 ## API roadmap
 
-Thanks to the abandonment of active_model_serializers, the Croucher APIs are in a slightly zombied condition. They will need to be rescued roughly this way:
+Thanks to the implosion and subsequent abandonment of active_model_serializers, the Croucher APIs are in a slightly zombied condition. They will need to be rescued roughly this way:
 
 * adopt the netflix fast_jsonapi library instead
 * standardise on jsonapi

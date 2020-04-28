@@ -1,5 +1,3 @@
-require 'concerns/has_round'
-
 module EvClient
   class Engine < ::Rails::Engine
 
