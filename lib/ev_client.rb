@@ -1,6 +1,6 @@
 require 'settingslogic'
 require 'request_store'
-require 'pub_client/engine'
+require 'ev_client/engine'
 
 module EvClient
   class AuthRequired < StandardError; end

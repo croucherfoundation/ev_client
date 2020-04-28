@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
 
-  mount EvClient::Engine => "/pub_client"
+  mount EvClient::Engine => "/ev_client"
 end

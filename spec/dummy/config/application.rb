@@ -8,7 +8,7 @@ require "sprockets/railtie"
 # require "rails/test_unit/railtie"
 
 Bundler.require(*Rails.groups)
-require "pub_client"
+require "ev_client"
 
 module Dummy
   class Application < Rails::Application

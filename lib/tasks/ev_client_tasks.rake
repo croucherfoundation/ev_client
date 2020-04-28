@@ -1,4 +1,4 @@
 # desc "Explaining what the task does"
-# task :pub_client do
+# task :ev_client do
 #   # Task goes here
 # end
