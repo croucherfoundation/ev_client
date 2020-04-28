@@ -1,3 +1,3 @@
 module EvClient
-  VERSION = "0.3.0"
+  VERSION = "0.12.0"
 end

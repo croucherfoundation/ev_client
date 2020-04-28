@@ -6,7 +6,7 @@ module EvClient
       g.fixture_replacement :factory_girl, :dir => 'spec/factories'
     end
     
-    initializer "pub_client.integration" do
+    initializer "ev_client.integration" do
       ActiveSupport.on_load :action_controller do
         helper EvClientHelper
       end
