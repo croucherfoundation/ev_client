@@ -5,7 +5,7 @@ module EvClientHelper
   end
 
   def ev_host
-    ENV['EV_URL'] || "#{Settings.ev.protocol}://#{Settings.ev.host}"
+    ENV['EV_URL']
   end
 
 end
